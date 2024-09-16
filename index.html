@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center">Button ON OFF</h1>
+
+    <div id="thiDiv"></div>
+
+    <button>On</button>
+
+    <!-- Now Modify the Bulb with JavaScript -->
+
+    <script>
+
+
+
+       let bulb =  document.querySelector("#thiDiv");
+       let btn  = document.querySelector("button");
+ 
+       let isON = 0;    //let isON = false;  hum false hur true value ke sath bi ye krskte he
+       
+       btn.addEventListener("click", function(){
+
+        if(isON === 0){
+            bulb.style.backgroundColor = "Yellow";
+            console.log("ON");
+            isON = 1;
+        }else{
+            bulb.style.backgroundColor = "transparent";
+            console.log("OFF");
+            isON = 0;
+
+        }
+       })
+
+
+
+
+
+
+
+
+
+
+
+       
+    </script>
+
+<!-- <script>
+    // let bulb = document.querySelector("#thiDiv");
+    // let btn = document.querySelector("button");
+
+    // btn.addEventListener("click", function(){
+    //     bulb.style.backgroundColor = "yellow";
+    //     console.log("ON")
+    // });
+
+    //Ab ye thi Example jis se bulb on huta he lekn is me sirf bulb on krskte he off nai agr hum chate he ke 1 hi button se bulb on bi hu hur off bi to hume logic laga huga wo hum agli example me dekhte he 
+
+</script> -->
+
+    <h2>Code Detail</h2>
+
+    <p>
+        Aapka code ek button aur ek bulb ko control karta hai, jahan isON variable bulb ke state ko track karta hai. Jab button ko click kiya jata hai, isON ki value check ki jati hai. Agar isON 0 hai, to bulb ko yellow color diya jata hai (indicating it’s on), aur isON ko 1 set kar diya jata hai. Agar isON 1 hai, to bulb ka color transparent (off) ho jata hai, aur isON ko 0 set kiya jata hai. Is tareeke se, har button click se bulb ka state toggle hota hai, on ya off hota hai, aur isON variable us state ko reflect karta hai.</p>
+
+    <b>margin: 0 auto; ka matlab ye hai ke hum element (jaise 'div') ko horizontally center me lana chahte hain.</b>  
+     
+    <li>0 ka matlab hai ke top aur bottom margin 0 pixels hogi, yani element ke upar aur neeche koi space nahi hoga.</li>
+
+    <li>auto ka matlab hota hai ke left aur right side ka margin automatically set ho, taake element center me aa jaye.</li>
+
+    <p>Asaan tareeqa: Jab hum margin: 0 auto; lagate hain, to browser left aur right ka equal space banata hai, jisse element beech me aa jata hai. Lekin ye tab kaam karega jab aapne element ki width set ki ho.</p>
+        
+</body>
+</html>

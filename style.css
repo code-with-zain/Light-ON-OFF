@@ -1,0 +1,24 @@
+#thiDiv{
+    border-radius: 50%;
+    border: 4px black solid;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+button{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    
+}
+
+
+
+/* margin: 0 auto; ka matlab ye hai ke hum element (jaise <div>) ko horizontally center me lana chahte hain.
+
+0 ka matlab hai ke top aur bottom margin 0 pixels hogi, yani element ke upar aur neeche koi space nahi hoga.
+auto ka matlab hota hai ke left aur right side ka margin automatically set ho, taake element center me aa jaye.
+Asaan tareeqa: Jab hum margin: 0 auto; lagate hain, to browser left aur right ka equal space banata hai, jisse element beech me aa jata hai. Lekin ye tab kaam karega jab aapne element ki width set ki ho. */
